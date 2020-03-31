@@ -10,8 +10,11 @@
       <q-select
         v-model="lang"
         :options="langOptions"
+        dropdown-icon="fas fa-sort-down"
         emit-value
         map-options
+        transition-show="flip-up"
+        transition-hide="flip-down"
       />
     </q-item-section>
   </q-item>

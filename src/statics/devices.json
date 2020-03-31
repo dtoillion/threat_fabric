@@ -1,0 +1,49 @@
+{
+  "devices": [
+    {
+      "id": 1,
+      "deviceId": 124643,
+      "deviceType": "mobile",
+      "operatingSystem": "iOS",
+      "riskLevel": 123,
+      "lastSeen": "3/30/2020 11:17:51 PM",
+      "country": "NL"
+    },
+    {
+      "id": 2,
+      "deviceId": 2344234,
+      "deviceType": "mobile",
+      "operatingSystem": "android",
+      "riskLevel": 123,
+      "lastSeen": "3/30/2020 11:17:51 PM",
+      "country": "NL"
+    },
+    {
+      "id": 3,
+      "deviceId": 1212343,
+      "deviceType": "desktop",
+      "operatingSystem": "macOS",
+      "riskLevel": 123,
+      "lastSeen": "3/30/2020 11:17:51 PM",
+      "country": "NL"
+    },
+    {
+      "id": 4,
+      "deviceId": 1244673,
+      "deviceType": "desktop",
+      "operatingSystem": "windows",
+      "riskLevel": 123,
+      "lastSeen": "3/30/2020 11:17:51 PM",
+      "country": "NL"
+    },
+    {
+      "id": 5,
+      "deviceId": 1897423,
+      "deviceType": "desktop",
+      "operatingSystem": "linux",
+      "riskLevel": 123,
+      "lastSeen": "3/30/2020 11:17:51 PM",
+      "country": "NL"
+    }
+  ]
+}
