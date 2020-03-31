@@ -1,10 +1,19 @@
 <template>
-  <q-toggle
-    @input="toggleDarkMode()"
-    v-model="darkMode"
-    :label="$t('settings.labelToggleDarkMode')"
-    style="min-width: 100%"
-  />
+  <q-item clickable tag="label">
+    <q-item-section>
+      <q-item-label>{{$t('settings.labelToggleDarkMode')}}</q-item-label>
+      <q-item-label caption>
+        XXEnable Dark theme for less eye fatigue.
+      </q-item-label>
+    </q-item-section>
+    <q-item-section>
+      <q-toggle
+        @input="toggleDarkMode()"
+        v-model="darkMode"
+        class="self-end"
+      />
+    </q-item-section>
+  </q-item>
 </template>
 
 <script>

@@ -1,12 +1,20 @@
 <template>
-  <q-select
-    v-model="lang"
-    :options="langOptions"
-    :label="$t('settings.labelSelectLanguage')"
-    emit-value
-    map-options
-    style="min-width: 100%"
-  />
+  <q-item clickable tag="label">
+    <q-item-section>
+      <q-item-label>{{$t('settings.labelSelectLanguage')}}</q-item-label>
+      <q-item-label caption>
+        XXChoose your preferred language.
+      </q-item-label>
+    </q-item-section>
+    <q-item-section>
+      <q-select
+        v-model="lang"
+        :options="langOptions"
+        emit-value
+        map-options
+      />
+    </q-item-section>
+  </q-item>
 </template>
 
 <script>
