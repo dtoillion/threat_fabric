@@ -5,7 +5,7 @@
         <q-list bordered padding separator>
           <q-item-label header>XXConnected Devices</q-item-label>
           <q-separator />
-          <Device v-for="device in allDevices" :key="device.id" :device="device" />
+          <Device v-for="device in allDevices" :key="device.id" :device="device" :mini=true />
         </q-list>
       </div>
     </div>
@@ -20,6 +20,8 @@ export default {
   name: 'DevicesPage',
   components: {
     Device,
+  },
+  created() {
   },
   computed: {
     ...mapGetters({

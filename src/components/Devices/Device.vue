@@ -1,5 +1,5 @@
 <template>
-  <q-item :to="`/devices/${device.id}`">
+  <q-item :to="mini ? `/devices/${device.id}` : null">
     <q-item-section>
       <q-item-label>XXDevice: {{device.deviceId}}</q-item-label>
       <q-item-label caption lines="2">
@@ -29,7 +29,10 @@
 <script>
 export default {
   name: 'Device',
-  props: ['device'],
+  props: [
+    'device',
+    'mini',
+  ],
   data() {
     return {};
   },
