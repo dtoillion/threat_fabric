@@ -1,5 +1,5 @@
 <template>
-  <q-item>
+  <q-item :to="`/devices/${device.id}`">
     <q-item-section>
       <q-item-label>XXDevice: {{device.deviceId}}</q-item-label>
       <q-item-label caption lines="2">
@@ -21,8 +21,6 @@
         <q-icon v-if="device.operatingSystem==='linux'" name="fab fa-linux" />
         <q-icon v-if="device.operatingSystem==='macOS'" name="fab fa-apple" />
         <q-icon v-if="device.operatingSystem==='windows'" name="fab fa-windows" />
-        <q-icon v-if="device.deviceType.type==='html'" name="fab fa-chrome" />
-        <q-icon v-if="device.deviceType.type==='html'" name="fab fa-internet-explorer" />
       </q-item-label>
     </q-item-section>
   </q-item>

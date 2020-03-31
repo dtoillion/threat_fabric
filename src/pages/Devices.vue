@@ -17,12 +17,9 @@ import { mapGetters } from 'vuex';
 import Device from 'components/Devices/Device';
 
 export default {
-  name: 'Devices',
+  name: 'DevicesPage',
   components: {
     Device,
-  },
-  created() {
-    this.$store.dispatch('devices/fetchApiData');
   },
   computed: {
     ...mapGetters({
