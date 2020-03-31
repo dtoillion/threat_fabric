@@ -2,7 +2,7 @@
   "name": "threat_fabric",
   "version": "0.0.1",
   "description": "Coding excersize for ThreatFabric interview.",
-  "productName": "TFAssignment",
+  "productName": "ThreatFabric",
   "cordovaId": "org.cordova.quasar.app",
   "capacitorId": "",
   "author": "dtoillion <toillion@gmail.com>",

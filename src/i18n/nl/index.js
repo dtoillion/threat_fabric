@@ -1,4 +1,4 @@
-// English translations
+// Dutch translations
 
 export default {
   navBar: {
@@ -7,7 +7,7 @@ export default {
     labelSettings: 'Settings',
   },
   settings: {
-    labelSelectLanguage: 'Choose language',
-    labelToggleDarkMode: 'Dark mode',
+    labelSelectLanguage: 'Kies een taal',
+    labelToggleDarkMode: 'Donkere modus',
   },
 };
