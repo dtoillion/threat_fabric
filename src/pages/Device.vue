@@ -24,7 +24,7 @@ export default {
   computed: {
     device() {
       return this.$store.getters['devices/allDevices'].find(
-        (u) => u.id === parseInt(this.$route.params.id, 10),
+        (u) => u.id === this.$route.params.id,
       );
     },
   },
