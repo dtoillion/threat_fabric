@@ -56,6 +56,7 @@ export default {
           (device) => device.operatingSystem.toLowerCase().match(this.search.toLowerCase())
           || device.deviceId.toLowerCase().match(this.search.toLowerCase())
           || device.deviceType.toLowerCase().match(this.search.toLowerCase())
+          || device.lastSeen.toLowerCase().match(this.search.toLowerCase())
           || device.country.toLowerCase().match(this.search.toLowerCase()),
         );
       }

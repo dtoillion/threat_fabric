@@ -58,7 +58,7 @@ export function fetchApiData(context) {
       deviceType: getRandomType(),
       operatingSystem: getRandomOS(),
       riskLevel: getRandomLongInt(100),
-      lastSeen: getRandomDate(),
+      lastSeen: getRandomDate().toString(),
       country: getRandomCountry(),
     };
     data.push(entry);
