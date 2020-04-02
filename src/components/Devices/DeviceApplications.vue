@@ -4,8 +4,7 @@
       :src="'/statics/' + app.iconURL"
       :alt="app.title"
       @click="dialogOpen = !dialogOpen"
-      class="rounded-borders"
-      style="max-height: 38px;"
+      class="rounded-borders app-icon"
     />
     <q-dialog
       v-model="dialogOpen"
@@ -15,11 +14,10 @@
       <q-card>
         <q-item>
           <q-item-section avatar>
-            <q-avatar>
+            <q-avatar rounded>
               <img
                 :src="'/statics/' + app.iconURL"
                 :alt="app.title"
-                class="rounded-borders"
               />
             </q-avatar>
           </q-item-section>
@@ -41,7 +39,7 @@
             XXInstalled on: {{ app.installedOn }} |
             XXLast updated: {{ app.lastUpdated }}
           </div>
-          <div class="text-body1">
+          <div class="text-body2">
             {{ app.description }}
           </div>
         </q-card-section>
@@ -63,3 +61,14 @@ export default {
   },
 };
 </script>
+
+<style lang="scss">
+.app-icon {
+  height: 38px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+</style>

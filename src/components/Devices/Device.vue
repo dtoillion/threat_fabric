@@ -7,8 +7,7 @@
       <q-item-label>Device Id: {{device.deviceId}}</q-item-label>
       <q-item-label caption lines="2">
         {{device.deviceType}} running
-        {{device.operatingSystem}} with risk level
-        {{device.riskLevel}} connected from
+        {{device.operatingSystem}} connected from
         {{device.country.toUpperCase()}}
       </q-item-label>
     </q-item-section>

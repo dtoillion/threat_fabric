@@ -44,6 +44,7 @@ export function fetchApiData(context) {
     const operatingSystems = ['Windows', 'Linux', 'Android', 'macOS', 'iOS'];
     return operatingSystems[getRandomInt(0, 4)];
   }
+
   function getRandomCountry() {
     const operatingSystems = ['us', 'nl', 'de', 'ca'];
     return operatingSystems[getRandomInt(0, 3)];

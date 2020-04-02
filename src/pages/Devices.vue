@@ -1,15 +1,9 @@
 <template>
   <q-page padding>
     <div class="row">
-      <div class="col-12 col-sm-8 col-md-6 col-lg-4 q-mx-auto">
+      <div class="col-12 col-sm-10 col-md-8 col-lg-6 q-mx-auto">
         <q-list bordered separator>
           <q-item>
-            <q-item-section>
-              <q-item-label header>XXConnected Devices</q-item-label>
-            </q-item-section>
-            <q-item-section tag="label">
-              <SortDevices />
-            </q-item-section>
             <q-item-section>
               <q-input
                 v-model="search"
@@ -24,6 +18,9 @@
                   <q-icon name="fas fa-search" size="xs" />
                 </template>
               </q-input>
+            </q-item-section>
+            <q-item-section>
+              <SortDevices />
             </q-item-section>
           </q-item>
           <q-separator />
