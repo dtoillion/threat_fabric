@@ -6,24 +6,26 @@
 import Echarts from 'vue-echarts-v3/src/full.js';
 
 export default {
-  name: 'BarChart',
+  name: 'InfectedDevicesPerDay',
   components: {
     Echarts,
   },
   data() {
     return {
       chartOptions: {
-        backgroundColor: '#2c343c',
         textStyle: {
-          color: '#F1F1F1',
+          color: '#233C45',
         },
         title: {
-          text: 'Customized Pie',
+          text: 'Infected Devices Per Day',
           left: 'center',
           top: 20,
           textStyle: {
-            color: '#F1F1F1',
+            color: '#233C45',
           },
+        },
+        itemStyle: {
+          color: '#BB6C42',
         },
         xAxis: {
           type: 'category',

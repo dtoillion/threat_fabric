@@ -25,7 +25,7 @@
           <q-item-section>
             <q-item-label>{{ app.title }}</q-item-label>
             <q-item-label caption>
-              XXVersion: {{ app.version }}
+              Version: {{ app.version }}
             </q-item-label>
           </q-item-section>
 
@@ -36,8 +36,8 @@
         <q-separator/>
         <q-card-section>
           <div class="text-caption q-mb-sm">
-            XXInstalled on: {{ app.installedOn }} |
-            XXLast updated: {{ app.lastUpdated }}
+            Installed on: {{ app.installedOn }} |
+            Last updated: {{ app.lastUpdated }}
           </div>
           <div class="text-body2">
             {{ app.description }}

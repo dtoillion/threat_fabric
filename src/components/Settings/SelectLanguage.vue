@@ -3,7 +3,7 @@
     <q-item-section>
       <q-item-label>{{$t('settings.labelSelectLanguage')}}</q-item-label>
       <q-item-label caption>
-        XXChoose your preferred language.
+        {{$t('settings.labelSelectLanguageDesc')}}
       </q-item-label>
     </q-item-section>
     <q-item-section>

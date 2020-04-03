@@ -3,7 +3,7 @@
     <q-item-section>
       <q-item-label>{{$t('settings.labelToggleDarkMode')}}</q-item-label>
       <q-item-label caption>
-        XXEnable Dark theme for less eye fatigue.
+        {{$t('settings.labelToggleDarkModeDesc')}}
       </q-item-label>
     </q-item-section>
     <q-item-section>

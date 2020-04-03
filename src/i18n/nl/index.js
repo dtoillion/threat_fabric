@@ -3,11 +3,15 @@
 export default {
   navBar: {
     labelDashboard: 'Dashboard',
-    labelDevices: 'Connected Devices',
-    labelSettings: 'Settings',
+    labelDevices: 'Verbonden Apparaten',
+    labelSettings: 'Voorkeuren',
   },
   settings: {
+    labelUserSettings: 'Gebruiker Voorkeuren',
     labelSelectLanguage: 'Kies een taal',
+    labelSelectLanguageDesc: 'Kies uw voorkeurstaal.',
+    labelDisplaySettings: 'Scherm',
     labelToggleDarkMode: 'Donkere modus',
+    labelToggleDarkModeDesc: 'Schakel de donkere modus in voor minder vermoeidheid van de ogen',
   },
 };

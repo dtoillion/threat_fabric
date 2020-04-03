@@ -1,22 +1,36 @@
 <template>
   <q-page padding>
-    <div class="row justify-center">
+    <div class="row">
       <q-card
-        class="col-12 col-sm-6 col-lg-4 q-gutter-xl"
+        class="col q-ma-md"
+        :class="this.$q.dark.isActive ? 'bg-light' : 'bg-transparent'"
         flat
         square
       >
         <q-card-section class="echarts q-pa-none">
-          <PieChart style="min-height: 350px;" />
+          <InfectedDevices style="min-height: 550px;" />
+        </q-card-section>
+      </q-card>
+    </div>
+    <div class="row">
+      <q-card
+        class="col q-ma-md"
+        :class="this.$q.dark.isActive ? 'bg-light' : 'bg-transparent'"
+        flat
+        square
+      >
+        <q-card-section class="echarts q-pa-none">
+          <InfectedDevicesByType style="min-height: 350px;" />
         </q-card-section>
       </q-card>
       <q-card
-        class="col-12 col-sm-6 col-lg-4 q-gutter-xl"
+        class="col q-ma-md"
+        :class="this.$q.dark.isActive ? 'bg-light' : 'bg-transparent'"
         flat
         square
       >
         <q-card-section class="echarts q-pa-none">
-          <BarChart style="min-height: 350px;" />
+          <InfectedDevicesPerDay style="min-height: 350px;" />
         </q-card-section>
       </q-card>
     </div>
@@ -24,8 +38,9 @@
 </template>
 
 <script>
-import PieChart from 'components/Charts/PieChart';
-import BarChart from 'components/Charts/BarChart';
+import InfectedDevices from 'components/Charts/InfectedDevices';
+import InfectedDevicesByType from 'components/Charts/InfectedDevicesByType';
+import InfectedDevicesPerDay from 'components/Charts/InfectedDevicesPerDay';
 
 export default {
   name: 'Index',
@@ -33,8 +48,9 @@ export default {
     return {};
   },
   components: {
-    PieChart,
-    BarChart,
+    InfectedDevices,
+    InfectedDevicesByType,
+    InfectedDevicesPerDay,
   },
 };
 </script>

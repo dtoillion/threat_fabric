@@ -5,7 +5,7 @@
         <q-list bordered padding>
           <Device :device="device" :mini=false />
           <q-separator spaced />
-          <q-item-label header>XXConnected applications:</q-item-label>
+          <q-item-label header>Connected applications:</q-item-label>
           <q-item>
             <DeviceApplications
               v-for="app in applications"

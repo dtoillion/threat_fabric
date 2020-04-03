@@ -18,7 +18,7 @@
         right-icon="fas fa-chevron-right"
         left-icon="fas fa-chevron-left"
         dense
-        class="bg-secondary"
+        class="bg-secondary text-light"
       >
         <q-route-tab to="/" :label="$t('navBar.labelDashboard')" />
         <q-route-tab to="/devices" :label="$t('navBar.labelDevices')" />
