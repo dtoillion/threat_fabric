@@ -24,7 +24,12 @@
             </q-item-section>
           </q-item>
           <q-separator />
-          <Device v-for="device in filteredDevices" :key="device.id" :device="device" :mini=true />
+          <Device
+            v-for="device in filteredDevices"
+            :key="device.id"
+            :device="device"
+            :mini=true
+          />
         </q-list>
       </div>
     </div>

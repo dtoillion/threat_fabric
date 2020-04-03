@@ -25,9 +25,14 @@
         <q-route-tab to="/settings"  :label="$t('navBar.labelSettings')" />
       </q-tabs>
     </q-header>
-
     <q-page-container>
-      <router-view />
+      <transition
+        appear
+        enter-active-class="animated fadeIn"
+        leave-active-class="animated fadeOut"
+      >
+        <router-view />
+      </transition>
     </q-page-container>
 
   </q-layout>
@@ -36,8 +41,5 @@
 <script>
 export default {
   name: 'MainLayout',
-  data() {
-    return {};
-  },
 };
 </script>

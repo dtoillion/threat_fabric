@@ -1,5 +1,9 @@
 body {
+  // system fonts stack
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  // prevents glitchy animations between pages
+  overflow-y: scroll;
+  // dark mode as per user prefs
   &.body--light {
     background: $light;
   }
@@ -9,4 +13,22 @@ body {
   .bg-light {
     background: $light;
   }
+}
+
+// speed for transition between pages
+$animationSpeed: 0.4s;
+
+// animation overrides for transition between pages
+.fadeOut {
+  -webkit-animation: fadeOut $animationSpeed; /* Safari 4+ */
+  -moz-animation:    fadeOut $animationSpeed; /* Fx 5+ */
+  -o-animation:      fadeOut $animationSpeed; /* Opera 12+ */
+  animation:         fadeOut $animationSpeed; /* IE 10+, Fx 29+ */
+}
+
+.fadeIn {
+  -webkit-animation: fadeIn $animationSpeed; /* Safari 4+ */
+  -moz-animation:    fadeIn $animationSpeed; /* Fx 5+ */
+  -o-animation:      fadeIn $animationSpeed; /* Opera 12+ */
+  animation:         fadeIn $animationSpeed; /* IE 10+, Fx 29+ */
 }

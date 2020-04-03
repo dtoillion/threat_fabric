@@ -4,7 +4,8 @@ const routes = [
     path: '/',
     component: () => import('layouts/MainLayout.vue'),
     children: [
-      { path: '', component: () => import('pages/Index.vue') },
+      { path: '', redirect: 'dashboard' },
+      { path: 'dashboard', component: () => import('pages/Index.vue') },
       { path: 'devices', component: () => import('pages/Devices.vue') },
       { path: 'devices/:id', component: () => import('pages/Device.vue') },
       { path: 'settings', component: () => import('pages/Settings.vue') },
