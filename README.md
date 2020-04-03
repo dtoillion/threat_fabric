@@ -31,15 +31,15 @@ App is currently populated with dummy data. To replace with API call un-comment 
 To make the chart components production-ready they would need to be modified to accept props and update the chart via a computed property.
 
 ### App styling
-Global css goes in `css/app.scss`
-Main theme values are in `css/quasar.variables.scss`
-Component library:  `https://quasar.dev/`
+- Global css goes in `css/app.scss`
+- Main theme values are in `css/quasar.variables.scss`
+- Component library:  `https://quasar.dev/`
 
 ### App structure
 
 #### Templates
-App > Layout > Pages > Components
-Reference all new pages in `src/router/routes.js`
+- App > Layout > Pages > Components
+- Reference all new pages in `src/router/routes.js`
 
 #### API Requests:
 Make a new module.
@@ -56,6 +56,6 @@ Make a new module.
 
 ### Translations
 
-Translation files are in `src/i18n`, all copy should be entered here.
-To access a translated string in your template do: `{{$t('settings.labelDisplaySettings')}}`
+- Translation files are in `src/i18n`, all copy should be entered here.
+- To access a translated string in your template do: `{{$t('settings.labelDisplaySettings')}}`
 
