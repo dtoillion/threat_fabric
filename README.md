@@ -2,6 +2,8 @@
 
 Coding excersize for ThreatFabric interview.
 
+Deployed here: https://tf-assignment.herokuapp.com/
+
 ## Install the dependencies
 ```bash
 npm install
