@@ -11,6 +11,7 @@
         @input="toggleDarkMode()"
         v-model="darkMode"
         class="self-end"
+        color="secondary"
       />
     </q-item-section>
   </q-item>
@@ -21,7 +22,7 @@ export default {
   name: 'DarkModeToggle',
   data() {
     return {
-      darkMode: true,
+      darkMode: false,
     };
   },
   methods: {

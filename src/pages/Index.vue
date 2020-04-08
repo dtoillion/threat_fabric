@@ -2,9 +2,8 @@
   <q-page padding>
     <div class="row">
       <q-card
-        class="col q-ma-md"
+        class="col q-ma-md q-pa-sm"
         :class="this.$q.dark.isActive ? 'bg-light' : 'bg-transparent'"
-        flat
         square
       >
         <q-card-section class="echarts q-pa-none">
@@ -16,7 +15,6 @@
       <q-card
         class="col q-ma-md"
         :class="this.$q.dark.isActive ? 'bg-light' : 'bg-transparent'"
-        flat
         square
       >
         <q-card-section class="echarts q-pa-none">
@@ -26,7 +24,6 @@
       <q-card
         class="col q-ma-md"
         :class="this.$q.dark.isActive ? 'bg-light' : 'bg-transparent'"
-        flat
         square
       >
         <q-card-section class="echarts q-pa-none">

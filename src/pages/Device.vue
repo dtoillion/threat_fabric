@@ -2,7 +2,7 @@
   <q-page padding>
     <div class="row">
       <div class="col-12 col-sm-8 col-md-6 col-lg-4 q-mx-auto">
-        <q-list bordered padding>
+        <q-list bordered padding class="shadow-1">
           <Device :device="device" :mini=false />
           <q-separator spaced />
           <q-item-label header>Connected applications:</q-item-label>

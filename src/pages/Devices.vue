@@ -2,7 +2,7 @@
   <q-page padding>
     <div class="row">
       <div class="col-12 col-sm-10 col-md-8 col-lg-6 q-mx-auto">
-        <q-list bordered separator>
+        <q-list bordered separator class="shadow-1">
           <q-item>
             <q-item-section>
               <q-input
